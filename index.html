@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ion Iascerinschi | Developer</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="Ion Iascerinschi" />
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="Ion Iascerinschi"/>
 
     <link rel="shortcut icon" href="images/favicon.ico">
 
     <!--Bootstrap Css-->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
 
     <!-- Materialdesign icons Css -->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
@@ -27,9 +27,9 @@
     <link rel="stylesheet" href="css/animate.min.css">
 
     <!-- Owl Slider -->
-    <link rel="stylesheet" href="css/owl.carousel.css" />
-    <link rel="stylesheet" href="css/owl.theme.css" />
-    <link rel="stylesheet" href="css/owl.transitions.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css"/>
+    <link rel="stylesheet" href="css/owl.theme.css"/>
+    <link rel="stylesheet" href="css/owl.transitions.css"/>
     <link href="https://use.fontawesome.com/768a40f80a.css" media="all" rel="stylesheet">
 
     <!-- Custom style Css -->
@@ -38,245 +38,277 @@
 
 <body>
 
-    <!-- START LOADER -->
-    <div id="preloader">
-        <div id="status">
-            <div class="spinner">Loading...</div>
+<!-- START LOADER -->
+<div id="preloader">
+    <div id="status">
+        <div class="spinner">Loading...</div>
+    </div>
+</div>
+<!-- END LOADER -->
+
+<!-- START NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
+    <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand nav-link logo" onclick="autoScroll('home');" style="margin-top: 8px;">
+            <h5>Ion Iascerinschi</h5>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="mdi mdi-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" onclick="collapseMenu(); autoScroll('home');">
+                    <a class="nav-link">Home</a>
+                </li>
+                <li class="nav-item" onclick="collapseMenu(); autoScroll('about');">
+                    <a class="nav-link">About</a>
+                </li>
+                <li class="nav-item" onclick="collapseMenu(); autoScroll('education');">
+                    <a class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item" onclick="collapseMenu(); autoScroll('projects');">
+                    <a class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item" onclick="collapseMenu(); autoScroll('contact');">
+                    <a class="nav-link">Contact</a>
+                </li>
+            </ul>
         </div>
     </div>
-    <!-- END LOADER -->
+</nav>
+<!-- END NAVBAR -->
 
-    <!-- START NAVBAR -->
-    <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
-        <div class="container">
-            <!-- LOGO -->
-            <a class="navbar-brand nav-link logo" onclick="autoScroll('home');">
-<!--                Ion Iascerinschi-->
-                <img src="images/logo.png" alt="" class="img-fluid logo-light">
-                <img src="images/logo_dark.png" alt="" class="img-fluid logo-dark">
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="mdi mdi-menu"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item" onclick="collapseMenu(); autoScroll('home');">
-                        <a class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item" onclick="collapseMenu(); autoScroll('about');">
-                        <a class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item" onclick="collapseMenu(); autoScroll('education');">
-                        <a class="nav-link">Experience</a>
-                    </li>
-                    <li class="nav-item" onclick="collapseMenu(); autoScroll('projects');">
-                        <a class="nav-link">Projects</a>
-                    </li>
-                    <li class="nav-item" onclick="collapseMenu(); autoScroll('contact');">
-                        <a class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- END NAVBAR -->
-
-    <!--START HOME-->
-    <section class="home-bg section h-100vh home" id="home">
-        <div class="bg-overlay"></div>
-        <div class="home-table">
-            <div class="home-table-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-12">
-                            <div class="text-white text-center">
-                                <h4>Hello & Welcome</h4>
-                                <h1 class="header_title mb-0 mt-3">I am <span class="element font-weight-bold" data-elements="Ion Iascerinschi,Software Engineer"></span></h1>
-                                <ul class="social_home list-unstyled text-center pt-4">
-                                    <li class="list-inline-item"><a href="mailto:ion.iascerinschi@gmail.com" target="_blank"><i class="mdi mdi-email"></i></a></li>
-                                    <li class="list-inline-item"><a href="http://github.com/iiasceri" target="_blank"><i class="mdi mdi-github-box"></i></a></li>
-                                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/iiasceri/" target="_blank"><i class="mdi mdi-linkedin"></i></a></li>
-                                </ul>
-                                <div class="header_btn">
-                                    <a href="ION_IASCERINSCHI_RESUME.pdf" target="_blank" class="btn btn-outline-custom btn-rounded mt-4">Resume / CV</a>
-                                </div>
+<!--START HOME-->
+<section class="home-bg section h-100vh home" id="home">
+    <div class="bg-overlay"></div>
+    <div class="home-table">
+        <div class="home-table-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="text-white text-center">
+                            <h4>Hello & Welcome</h4>
+                            <h1 class="header_title mb-0 mt-3">I am <span class="element font-weight-bold"
+                                                                          data-elements="Ion Iascerinschi,Software Engineer"></span>
+                            </h1>
+                            <ul class="social_home list-unstyled text-center pt-4">
+                                <li class="list-inline-item"><a href="mailto:ion.iascerinschi@gmail.com"
+                                                                target="_blank"><i class="mdi mdi-email"></i></a></li>
+                                <li class="list-inline-item"><a href="http://github.com/iiasceri" target="_blank"><i
+                                        class="mdi mdi-github-box"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.linkedin.com/in/iiasceri/"
+                                                                target="_blank"><i class="mdi mdi-linkedin"></i></a>
+                                </li>
+                            </ul>
+                            <div class="header_btn">
+                                <a href="ION_IASCERINSCHI_RESUME.pdf" target="_blank"
+                                   class="btn btn-outline-custom btn-rounded mt-4">Resume / CV</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="scroll_down">
-            <a href="#about" >
-                    <i class="mbri-down text-white" style="display: contents"></i>
-            </a>
-        </div>
-    </section>
-    <!--END HOME-->
+    </div>
+    <div class="scroll_down">
+        <a href="#about">
+            <i class="mbri-down text-white" style="display: contents"></i>
+        </a>
+    </div>
+</section>
+<!--END HOME-->
 
-    <!-- START ABOUT -->
-    <section class="section about" id="about">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="text-center mx-auto section-main-title">
-                        <h2><span class="font-weight-bold">About Me</span></h2>
-                        <div class="main-title-border">
-                            <i class="mdi mdi-asterisk"></i>
-                        </div>
-                        <div class="intro-text">
-                            <!-- <strong> -->
-                            <!-- <span style='font-size:24px;'>
-                                Greetings!
-                            </span> -->
-                            <!-- </strong> -->
-                            I'm an Software Engineer. <br>I like to code and I love tea <i class="fa fa-coffee"></i>
-<!--                            and his MacBook <i class="fa fa-laptop"></i>.-->
-                        </div>
+<!-- START ABOUT -->
+<section class="section about" id="about">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="text-center mx-auto section-main-title">
+                    <h2><span class="font-weight-bold">About Me</span></h2>
+                    <div class="main-title-border">
+                        <i class="mdi mdi-asterisk"></i>
                     </div>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-lg-6">
-                    <div class="progress-bars skill-custom">
-                        <div class="clearfix">
-                            <div class="text-dark font-weight-bold float-left">Java (J2EE, Spring, Hibernate, Android)</div>
-                            <div class="text-muted float-right"></div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="clearfix">
-                            <div class="text-dark font-weight-bold float-left">Typescript (Angular 7)</div>
-                            <div class="text-muted float-right"></div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="clearfix">
-                            <div class="text-dark font-weight-bold float-left">SQL (Ms SQL, Oracle, PostgreSQL)</div>
-                            <div class="text-muted float-right"></div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 79%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="progress-bars skill-custom">
-                        <div class="clearfix">
-                            <div class="text-dark font-weight-bold float-left">Python3 (PyQt5, QML)</div>
-                            <div class="text-muted float-right"></div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="clearfix">
-                            <div class="text-dark font-weight-bold float-left">HTML/CSS/Javascript</div>
-                            <div class="text-muted float-right"></div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="clearfix">
-                            <div class="text-dark font-weight-bold float-left">Swift 4 (CocoaPods, Alamofire, SwiftyJSON)</div>
-                            <div class="text-muted float-right"></div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width:58%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
+                    <div class="intro-text">
+                        <!-- <strong> -->
+                        <!-- <span style='font-size:24px;'>
+                        Greetings!
+                        </span> -->
+                        <!-- </strong> -->
+                        I'm an Software Engineer. <br>I like to code and I love tea <i class="fa fa-coffee"></i>
+                        <!--                            and his MacBook <i class="fa fa-laptop"></i>.-->
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- END ABOUT -->
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <div class="progress-bars skill-custom">
+                    <div class="clearfix">
+                        <div class="text-dark font-weight-bold float-left">Java (J2EE, Spring, Hibernate, Android)</div>
+                        <div class="text-muted float-right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="0"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="text-dark font-weight-bold float-left">Typescript (Angular 7)</div>
+                        <div class="text-muted float-right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="text-dark font-weight-bold float-left">SQL (Ms SQL, Oracle, PostgreSQL)</div>
+                        <div class="text-muted float-right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 79%" aria-valuenow="0"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="progress-bars skill-custom">
+                    <div class="clearfix">
+                        <div class="text-dark font-weight-bold float-left">Python3 (PyQt5, QML)</div>
+                        <div class="text-muted float-right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="0"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="text-dark font-weight-bold float-left">HTML/CSS/Javascript</div>
+                        <div class="text-muted float-right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="25"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="text-dark font-weight-bold float-left">Swift 4 (CocoaPods, Alamofire, SwiftyJSON)
+                        </div>
+                        <div class="text-muted float-right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width:58%" aria-valuenow="0"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END ABOUT -->
 
-    <!-- START EXP. & EDU. -->
-    <section class="section bg-dark1 education" id="education">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="text-center mx-auto section-main-title">
-                        <h2><span class="font-weight-bold" style="margin-left: 15px">Education & Experience</span></h2>
-                        <div class="main-title-border">
-                            <i class="mdi mdi-asterisk"></i>
+<!-- START EXP. & EDU. -->
+<section class="section bg-dark1 education" id="education">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="text-center mx-auto section-main-title">
+                    <h2><span class="font-weight-bold" style="margin-left: 15px">Education & Experience</span></h2>
+                    <div class="main-title-border">
+                        <i class="mdi mdi-asterisk"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="cv_edu_exp mt-3">
+                    <div class="cv_edu_exp_box mt-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Mar. 2019 -
+                                    May 2019
+                                </div>
+                                <div class="cb_edu_exp_detail">
+                                    <h4>Next Generation Team</h4>
+                                    <p class="cv_desc mb-0">SOFTWARE ENGINEER</p>
+                                    <p class="cv_desc mb-0">• Developed image processing engine for dental desktop
+                                        application.</p>
+                                    <p class="cv_desc mb-0">• Designed and implemented image cropping functionality and
+                                        UI for custom teeth libraries.</p>
+                                    <p class="cv_desc mb-0">• Developed Angular 7 WEB application for pharmacy. Main
+                                        purpose being CRUD operations for clients and suppliers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv_edu_exp_box mt-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Jul. 2018 -
+                                    Aug. 2018
+                                </div>
+                                <div class="cb_edu_exp_detail">
+                                    <h4>ISD-Group</h4>
+                                    <p class="cv_desc mb-0">JAVA DEVELOPER</p>
+                                    <p class="cv_desc mb-0">• Implemented RESTful API server for sport related Android
+                                        application.</p>
+                                    <p class="cv_desc mb-0">• Built and deployed overall service infrastructure using
+                                        Spring Boot and Hibernate, focusing on high-availability and fault
+                                        tolerance.</p>
+                                    <p class="cv_desc mb-0">• Developed parts of GUI in Android application using libGDX
+                                        library and connected application to server using HTTP requests.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="cv_edu_exp mt-3">
-                        <div class="cv_edu_exp_box mt-4">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Mar. 2019 - May 2019</div>
-                                    <div class="cb_edu_exp_detail">
-                                        <h4>Next Generation Team</h4>
-                                        <p class="cv_desc mb-0">SOFTWARE ENGINEER</p>
-                                        <p class="cv_desc mb-0">• Developed image processing engine for dental desktop application.</p>
-                                        <p class="cv_desc mb-0">• Designed and implemented image cropping functionality and UI for custom teeth libraries.</p>
-                                        <p class="cv_desc mb-0">• Developed Angular 7 WEB application for pharmacy. Main purpose being CRUD operations for clients and suppliers.</p>
-                                    </div>
+            <div class="col-lg-5 offset-lg-2">
+                <div class="cv_edu_exp mt-3">
+                    <div class="cv_edu_exp_box mt-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Sep. 2016 -
+                                    Jun. 2019
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="cv_edu_exp_box mt-4">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Jul. 2018 - Aug. 2018</div>
-                                    <div class="cb_edu_exp_detail">
-                                        <h4>ISD-Group</h4>
-                                        <p class="cv_desc mb-0">JAVA DEVELOPER</p>
-                                        <p class="cv_desc mb-0">• Implemented RESTful API server for sport related Android application.</p>
-                                        <p class="cv_desc mb-0">• Built and deployed overall service infrastructure using Spring Boot and Hibernate, focusing on high-availability and fault tolerance.</p>
-                                        <p class="cv_desc mb-0">• Developed parts of GUI in Android application using libGDX library and connected application to server using HTTP requests.</p>
-                                    </div>
+                                <div class="cb_edu_exp_detail">
+                                    <h4>Bachelor in Computer Science</h4>
+                                    <p class="cv_desc mb-0">STATE UNIVERSITY OF MOLDOVA</p>
+                                    <p class="cv_desc mb-0">Faculty of Mathematics and Computer Science</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-5 offset-lg-2">
-                    <div class="cv_edu_exp mt-3">
-                        <div class="cv_edu_exp_box mt-4">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Sep. 2016 - Jun. 2019</div>
-                                    <div class="cb_edu_exp_detail">
-                                        <h4>Bachelor in Computer Science</h4>
-                                        <p class="cv_desc mb-0">STATE UNIVERSITY OF MOLDOVA</p>
-                                        <p class="cv_desc mb-0">Faculty of Mathematics and Computer Science</p>
-                                    </div>
+                    <div class="cv_edu_exp_box mt-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Oct. 2018 -
+                                    Jan. 2019
+                                </div>
+                                <div class="cb_edu_exp_detail">
+                                    <h4>Endava AM Tech Course</h4>
+                                    <p class="cv_desc mb-0">JAVA (J2EE) COURSE</p>
+                                    <p class="cv_desc mb-0">• Developed WEB application as tool for project management
+                                        (Maven, Tomcat, Spring MVC/Security, Hibernate, PostgreSQL, jsp, js).</p>
+                                    <p class="cv_desc mb-0">• Designed and implemented query persistence on database
+                                        using HQL (Hibernate Query Language).</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="cv_edu_exp_box mt-4">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Oct. 2018 - Jan. 2019</div>
-                                    <div class="cb_edu_exp_detail">
-                                        <h4>Endava AM Tech Course</h4>
-                                        <p class="cv_desc mb-0">JAVA (J2EE) COURSE</p>
-                                        <p class="cv_desc mb-0">• Developed WEB application as tool for project management (Maven, Tomcat, Spring MVC/Security, Hibernate, PostgreSQL, jsp, js).</p>
-                                        <p class="cv_desc mb-0">• Designed and implemented query persistence on database using HQL (Hibernate Query Language).</p>
-                                    </div>
+                    </div>
+                    <div class="cv_edu_exp_box mt-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Aug. 2017 -
+                                    Sep. 2018
                                 </div>
-                            </div>
-                        </div>
-                        <div class="cv_edu_exp_box mt-4">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Aug. 2017 - Sep. 2018</div>
-                                    <div class="cb_edu_exp_detail">
-                                        <h4>Academy+ &lt;Born To Code></h4>
-                                        <p class="cv_desc mb-0">SOFTWARE ENGINEERING COURSE</p>
-                                        <p class="cv_desc mb-0">• Wrote own implementations of standard C libraries.</p>
-                                        <p class="cv_desc mb-0">• Solved puzzles using backtracking technique, oriented graphs and different data structures.</p>
-                                    </div>
+                                <div class="cb_edu_exp_detail">
+                                    <h4>Academy+ &lt;Born To Code></h4>
+                                    <p class="cv_desc mb-0">SOFTWARE ENGINEERING COURSE</p>
+                                    <p class="cv_desc mb-0">• Wrote own implementations of standard C libraries.</p>
+                                    <p class="cv_desc mb-0">• Solved puzzles using backtracking technique, oriented
+                                        graphs and different data structures.</p>
                                 </div>
                             </div>
                         </div>
@@ -284,217 +316,242 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- END EXP. & EDU. -->
+    </div>
+</section>
+<!-- END EXP. & EDU. -->
 
-    <!--START PROJECTS -->
-    <!-- START BLOG -->
-    <section class="section bg-light projects" id="projects">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="text-center mx-auto section-main-title">
-                        <h2><span class="font-weight-bold">Projects</span></h2>
-                        <div class="main-title-border">
-                            <i class="mdi mdi-asterisk"></i>
+<!--START PROJECTS -->
+<!-- START BLOG -->
+<section class="section bg-light projects" id="projects">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="text-center mx-auto section-main-title">
+                    <h2><span class="font-weight-bold">Projects</span></h2>
+                    <div class="main-title-border">
+                        <i class="mdi mdi-asterisk"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mt-3">
+                <div class="text-center rounded bg-white p-2">
+                    <div class="img_blog">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="images/blog/blog-3.jpg" class="img-zoom">
+                                        <div class="work_box">
+                                            <div class="work_img">
+                                                <img src="images/blog/blog-3.jpg" alt=""
+                                                     class="img-fluid rounded mx-auto d-block">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="images/blog/blog-4.jpg" class="img-zoom">
+                                        <div class="work_box">
+                                            <div class="work_img">
+                                                <img src="images/blog/blog-4.jpg" alt=""
+                                                     class="img-fluid rounded mx-auto d-block">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="images/blog/blog-5.png" class="img-zoom">
+                                        <div class="work_box">
+                                            <div class="work_img">
+                                                <img src="images/blog/blog-5.png" alt=""
+                                                     class="img-fluid rounded mx-auto d-block">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                               data-slide="prev">
+                                <span class="mbri-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                               data-slide="next">
+                                <span class="mbri-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content_blog pt-3 pb-3">
+                        <div>
+                            <h5 class="font-weight-bold mb-0"><a class="text-dark">HiWelfare (Pharmacy)</a></h5>
+                        </div>
+                        <div class="mt-3">
+                            <p class="font-weight-bold h6 mb-3"><a class="text-custom">Angular 7</a></p>
+                            <p class="h6 text-muted date_blog mb-0">Apr. 2019 - May. 2019<a
+                                    class="text-dark font-weight-bold"></a></p>
+                            <p class="mt-3 desc_blog pl-2 pr-2 text-muted">• Developed WEB application for pharmacy.
+                                Main purpose being CRUD operations for clients and suppliers.</p>
+                            <p class="h6 mb-0"><a href="https://www.hiwelfare.it/" target="_blank" class="text-dark">See
+                                More...</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 mt-3">
-                    <div class="text-center rounded bg-white p-2">
+            <div class="col-lg-4 mt-3">
+                <div class="text-center rounded bg-white p-2">
+                    <div class="blog_video position-relative">
                         <div class="img_blog">
-                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <a href="images/blog/blog-3.jpg" class="img-zoom">
-                                            <div class="work_box">
-                                                <div class="work_img">
-                                                    <img src="images/blog/blog-3.jpg" alt="" class="img-fluid rounded mx-auto d-block">
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <a href="images/blog/blog-4.jpg" class="img-zoom">
-                                            <div class="work_box">
-                                                <div class="work_img">
-                                                    <img src="images/blog/blog-4.jpg" alt="" class="img-fluid rounded mx-auto d-block">
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <a href="images/blog/blog-5.png" class="img-zoom">
-                                            <div class="work_box">
-                                                <div class="work_img">
-                                                    <img src="images/blog/blog-5.png" alt="" class="img-fluid rounded mx-auto d-block">
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                    <span class="mbri-left" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                    <span class="mbri-right" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
+                            <img src="images/blog/usmfmi.jpg" alt="Motivision"
+                                 class="img-fluid rounded mx-auto d-block">
                         </div>
-                        <div class="content_blog pt-3 pb-3">
-                            <div>
-                                <h5 class="font-weight-bold mb-0"><a class="text-dark">HiWelfare (Pharmacy)</a></h5>
-                            </div>
-                            <div class="mt-3">
-                                <p class="font-weight-bold h6 mb-3"><a class="text-custom">Angular 7</a></p>
-                                <p class="h6 text-muted date_blog mb-0">Apr. 2019 - May. 2019<a class="text-dark font-weight-bold"></a></p>
-                                <p class="mt-3 desc_blog pl-2 pr-2 text-muted">• Developed WEB application for pharmacy. Main purpose being CRUD operations for clients and suppliers.</p>
-                                <p class="h6 mb-0"><a href="https://www.hiwelfare.it/" target="_blank" class="text-dark">See More...</a></p>
-                            </div>
+                        <a href="https://www.youtube.com/watch?v=5s0LKDV5OwE" class="blog_play"><i
+                                class="mdi mdi-play"></i></a>
+                    </div>
+                    <div class="content_blog pt-3 pb-3">
+                        <div>
+                            <h5 class="font-weight-bold mb-0"><a class="text-dark">Student Schedule (USM-FMI)</a></h5>
+                        </div>
+                        <div class="mt-3">
+                            <p class="font-weight-bold h6 mb-3"><a class="text-custom">Android & Spring MVC</a></p>
+                            <p class="h6 text-muted date_blog mb-0">Jan. 2019 - Jun. 2019<a
+                                    class="text-dark font-weight-bold"></a></p>
+                            <p class="mt-3 desc_blog pl-2 pr-2 text-muted">• Developed Android application using
+                                fragments and different layout approaches.
+                                <br>• Implemented RESTful API server for client application using MVC pattern.
+                                <br>• Developed WEB application as admin panel for managing schedule, groups, students
+                                and teachers using jsp pages.</p>
+                            <p class="h6 mb-0"><a href="http://github.com/iiasceri/USM-FMI" target="_blank"
+                                                  class="text-dark">See More...</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-3">
-                    <div class="text-center rounded bg-white p-2">
-                        <div class="blog_video position-relative">
-                            <div class="img_blog">
-                                <img src="images/blog/usmfmi.jpg" alt="Motivision" class="img-fluid rounded mx-auto d-block">
-                            </div>
-                            <a href="https://www.youtube.com/watch?v=5s0LKDV5OwE" class="blog_play"><i class="mdi mdi-play"></i></a>
+            </div>
+            <div class="col-lg-4 mt-3">
+                <div class="text-center rounded bg-white p-2">
+                    <div class="blog_video position-relative">
+                        <div class="img_blog">
+                            <img src="images/blog/blog-2.jpg" alt="" class="img-fluid rounded mx-auto d-block">
                         </div>
-                        <div class="content_blog pt-3 pb-3">
-                            <div>
-                                <h5 class="font-weight-bold mb-0"><a class="text-dark">Student Schedule (USM-FMI)</a></h5>
-                            </div>
-                            <div class="mt-3">
-                                <p class="font-weight-bold h6 mb-3"><a class="text-custom">Android & Spring MVC</a></p>
-                                <p class="h6 text-muted date_blog mb-0">Jan. 2019 - Jun. 2019<a class="text-dark font-weight-bold"></a></p>
-                                <p class="mt-3 desc_blog pl-2 pr-2 text-muted">• Developed Android application using fragments and different layout approaches.
-                                    <br>• Implemented RESTful API server for client application using MVC pattern.
-                                    <br>• Developed WEB application as admin panel for managing schedule, groups, students and teachers using jsp pages.</p>
-                                <p class="h6 mb-0"><a href="http://github.com/iiasceri/USM-FMI" target="_blank" class="text-dark">See More...</a></p>
-                            </div>
-                        </div>
+                        <a href="https://www.youtube.com/watch?v=DjyEy8KIB3g" class="blog_play"><i
+                                class="mdi mdi-play"></i></a>
                     </div>
-                </div>
-                <div class="col-lg-4 mt-3">
-                    <div class="text-center rounded bg-white p-2">
-                        <div class="blog_video position-relative">
-                            <div class="img_blog">
-                                <img src="images/blog/blog-2.jpg" alt="" class="img-fluid rounded mx-auto d-block">
-                            </div>
-                            <a href="https://www.youtube.com/watch?v=DjyEy8KIB3g" class="blog_play"><i class="mdi mdi-play"></i></a>
+                    <div class="content_blog pt-3 pb-3">
+                        <div>
+                            <h5 class="font-weight-bold mb-0"><a class="text-dark">Smile Lynx</a></h5>
                         </div>
-                        <div class="content_blog pt-3 pb-3">
-                            <div>
-                                <h5 class="font-weight-bold mb-0"><a class="text-dark">Smile Lynx</a></h5>
-                            </div>
-                            <div class="mt-3">
-                                <p class="font-weight-bold h6 mb-3"><a class="text-custom">PyQt5 (Python3 + QML)</a></p>
-                                <p class="h6 text-muted date_blog mb-0">March 2019<a class="text-dark font-weight-bold"></a></p>
-                                <p class="mt-3 desc_blog pl-2 pr-2 text-muted">• Designed and implemented UI and image cropping functionality for custom teeth libraries.
+                        <div class="mt-3">
+                            <p class="font-weight-bold h6 mb-3"><a class="text-custom">PyQt5 (Python3 + QML)</a></p>
+                            <p class="h6 text-muted date_blog mb-0">March 2019<a class="text-dark font-weight-bold"></a>
+                            </p>
+                            <p class="mt-3 desc_blog pl-2 pr-2 text-muted">• Designed and implemented UI and image
+                                cropping functionality for custom teeth libraries.
                                 <br>• Developed image processing engine for dental desktop application.</p>
-                                <p class="h6 mb-0"><a href="https://www.3d-lynx.com/product/smile-lynx" target="_blank" class="text-dark">See More...</a></p>
-                            </div>
+                            <p class="h6 mb-0"><a href="https://www.3d-lynx.com/product/smile-lynx" target="_blank"
+                                                  class="text-dark">See More...</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- END BLOG -->
-    <!--END PROJECTS -->
+    </div>
+</section>
+<!-- END BLOG -->
+<!--END PROJECTS -->
 
-    <!-- CONTACT FORM START-->
-    <section class="section-large bg-dark1" id="contact">
-        <div class="container">
-            <div class="col justify-content-center">
-                <div class="col-lg-12">
-                    <div class="text-center mx-auto section-main-title">
-                        <h2><span class="font-weight-bold">Get in Touch</span></h2>
-                        <div class="main-title-border">
-                            <i class="mdi mdi-asterisk"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="contact">
-                <div class="text-center mt-3 contact-item">
-                    <div>
-                        <a href="mailto:ion.iascerinschi@gmail.com"><i class="mbri-letter text-custom h2"></i></a>
-                    </div>
-                    <div class="mt-2">
-                        <a href="mailto:ion.iascerinschi@gmail.com" class="text-dark"><p class="mb-0 font-weight-bold">ion.iascerinschi@gmail.com</p></a>
-                    </div>
-                </div>
-                <div class="text-center mt-3 contact-item">
-                    <div>
-                        <a href="tel:+353-89-491-7250"><i class="mbri-mobile2 text-custom h2"></i></a>
-                    </div>
-                    <div class="mt-2">
-                        <a href="tel:+353-89-491-7250" class="text-dark"><p class="mb-0 font-weight-bold">(+353) 89-491-7250</p></a>
+<!-- CONTACT FORM START-->
+<section class="section-large bg-dark1" id="contact">
+    <div class="container">
+        <div class="col justify-content-center">
+            <div class="col-lg-12">
+                <div class="text-center mx-auto section-main-title">
+                    <h2><span class="font-weight-bold">Get in Touch</span></h2>
+                    <div class="main-title-border">
+                        <i class="mdi mdi-asterisk"></i>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- CONTACT FORM END-->
-
-    <!-- START FOOTER -->
-    <section class="bg-light">
-        <div class="container">
-            <div class="row pt-4 pb-4">
-                <div class="col-lg-12">
-                    <div class="float-left float_none mt-2 mb-2">
-                        <p class="copy-rights text-muted mb-0">2019 &copy; Ion Iascerinschi.</p>
-                    </div>
-                    <div class="float-right float_none mt-2 mb-2">
-                        <ul class="list-inline fot_social mb-0">
-                            <li class="list-inline-item"><a href="http://github.com/iiasceri" target="_blank" class="social-icon text-muted"><i class="mdi mdi-github-circle"></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/iiasceri" target="_blank" class="social-icon text-muted"><i class="mdi mdi-linkedin"></i></a></li>
-                        </ul>
-                    </div>
+        <div class="contact">
+            <div class="text-center mt-3 contact-item">
+                <div>
+                    <a href="mailto:ion.iascerinschi@gmail.com"><i class="mbri-letter text-custom h2"></i></a>
+                </div>
+                <div class="mt-2">
+                    <a href="mailto:ion.iascerinschi@gmail.com" class="text-dark"><p class="mb-0 font-weight-bold">
+                        ion.iascerinschi@gmail.com</p></a>
+                </div>
+            </div>
+            <div class="text-center mt-3 contact-item">
+                <div>
+                    <a href="tel:+353-89-491-7250"><i class="mbri-mobile2 text-custom h2"></i></a>
+                </div>
+                <div class="mt-2">
+                    <a href="tel:+44-75-39-208085" class="text-dark"><p class="mb-0 font-weight-bold">(+44)
+                        75-39-208085</p></a>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- END FOOTER -->
+    </div>
+</section>
+<!-- CONTACT FORM END-->
 
-    <!-- BACK TO TOP -->
-    <a href="#" class="back_top"> <i class="mbri-arrow-up"> </i> </a>
+<!-- START FOOTER -->
+<section class="bg-light">
+    <div class="container">
+        <div class="row pt-4 pb-4">
+            <div class="col-lg-12">
+                <div class="float-left float_none mt-2 mb-2">
+                    <p class="copy-rights text-muted mb-0">2021 &copy; Ion Iascerinschi.</p>
+                </div>
+                <div class="float-right float_none mt-2 mb-2">
+                    <ul class="list-inline fot_social mb-0">
+                        <li class="list-inline-item"><a href="http://github.com/iiasceri" target="_blank"
+                                                        class="social-icon text-muted"><i
+                                class="mdi mdi-github-circle"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/iiasceri" target="_blank"
+                                                        class="social-icon text-muted"><i class="mdi mdi-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END FOOTER -->
+
+<!-- BACK TO TOP -->
+<a href="#" class="back_top"> <i class="mbri-arrow-up"> </i> </a>
 
 
-    <!-- JAVASCRIPTS -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!--EASING JS-->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrollspy.min.js"></script>
-    <!-- TYPED -->
-    <script src="js/typed.js"></script>
-    <!-- MFP JS -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <!--PORTFOLIO FILTER JS-->
-    <script src="js/isotope.js"></script>
-    <!-- OWL CAROUSEL -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!--CUSTOM JS-->
-    <script src="js/custom.js"></script>
-    <script>
-        $(".element").each(function() {
-            var $this = $(this);
-            $this.typed({
-                strings: $this.attr('data-elements').split(','),
-                typeSpeed: 100,
-                backDelay: 3000
-            });
+<!-- JAVASCRIPTS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--EASING JS-->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrollspy.min.js"></script>
+<!-- TYPED -->
+<script src="js/typed.js"></script>
+<!-- MFP JS -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!--PORTFOLIO FILTER JS-->
+<script src="js/isotope.js"></script>
+<!-- OWL CAROUSEL -->
+<script src="js/owl.carousel.min.js"></script>
+<!--CUSTOM JS-->
+<script src="js/custom.js"></script>
+<script>
+    $(".element").each(function () {
+        var $this = $(this);
+        $this.typed({
+            strings: $this.attr('data-elements').split(','),
+            typeSpeed: 100,
+            backDelay: 3000
         });
-    </script>
+    });
+</script>
 </body>
 
 </html>
